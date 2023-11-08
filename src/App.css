@@ -1,0 +1,29 @@
+/* .suggestions-container {
+    max-height: 200px; 
+    overflow-y: auto;
+    border: 1px solid #ccc; 
+    position: absolute;
+    background: #fff;
+  }
+   */
+  /* Optional: Style suggestions list items */
+  /* .suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  } */
+
+  /* .suggestions li {
+    cursor: pointer;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+  } */
+/*   
+  .suggestions li:last-child {
+    border-bottom: none;
+  }
+
+  .line-chart {
+    width: 50%;
+    height: 300px;
+  } */

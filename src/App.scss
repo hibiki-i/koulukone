@@ -1,0 +1,153 @@
+/* Common styles for all screen sizes */
+body {
+  font-family: Arial, sans-serif;
+  // background-color: #fffafa;
+  margin-top: 10px auto;
+  padding: 0;
+}
+
+.school-engine {
+  background-color: #ebe8e8;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  width: 50%;
+  background-color: #ebe8e8;
+
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .suggestions-container {
+    position: relative;
+    width: 100%;
+
+    ul.suggestions {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      max-height: 150px;
+      overflow-y: auto;
+      z-index: 2;
+
+      li {
+        padding: 10px;
+        cursor: pointer;
+
+        &:hover {
+          background: #f0f0f0;
+        }
+      }
+    }
+  }
+}
+
+.line-chart {
+  margin: 20px 0;
+  background-color: #f0f0f0;
+  padding: 5%;
+}
+
+.koulu, .kunta {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    th {
+      border-bottom: none;
+      background: #f0f0f0;
+      font-weight: normal;
+      padding: 10px;
+    }
+
+    td {
+      border-top: none;
+      font-weight: bold;
+      font-size: x-large;
+      padding: 20px;
+    }
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #333;
+  margin-top: 0;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Styles for desktop screens */
+@media screen and (min-width: 768px) {
+  body {
+    margin: 50px auto;
+    max-width: 80em;
+    position: relative;
+  }
+}
+
+/* Styles for mobile screens */
+@media screen and (max-width: 767px) {
+  body {
+    margin: 10px 10px;
+  }
+
+  .search-bar {
+    margin: 20px 0;
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .suggestions-container {
+      ul.suggestions {
+        max-height: 150px;
+      }
+    }
+  }
+
+  .line-chart {
+    width: 100%;
+  }
+
+  .koulu, .kunta {
+    margin: 20px 0;
+
+  }
+}
