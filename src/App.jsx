@@ -3,10 +3,7 @@ import { Line } from 'react-chartjs-2'
 import  'chart.js/auto'
 import data from './assets/data.json'
 import averages from './assets/averages.json'
-// import './App.css'
 import './App.scss'
-
-// Chart.register(CategoryScale, LinearScale, PointElement, LineElement, Title)
 
 
 function SearchBar({ onSearch }) {
@@ -63,26 +60,29 @@ const LineChart = ({ result }) => {
     labels: [2019, 2020, 2021, 2022, '2023 (estimation)', '2024 (plan)', '2025 (plan)'], 
     datasets: [
       {
-        label: 'Total expenditure per resident, €',
+        label: result.kunta_nimi,
         data: [result.Toimintamenot19, result.Toimintamenot20, result.Toimintamenot21, result.Toimintamenot22, result.Toimintamenot23, result.Toimintamenot24, result.Toimintamenot25],
         fill: false,
-        tension: 0.1
+        tension: 0.1,
+        borderColor: 'rgb(75, 192, 192)',
       },
       {
-        label: 'Average total expenditure per resident, €',
+        label: 'Average of all municipalities',
         data: [averages[0].Toimintamenot, averages[1].Toimintamenot, averages[2].Toimintamenot, averages[3].Toimintamenot, averages[4].Toimintamenot, averages[5].Toimintamenot, averages[6].Toimintamenot],
         fill: false,
-        tension: 0.1
+        tension: 0.1,
+        borderColor: 'rgb(248, 75, 75)',
       }],
   }
 
   const config = {
     type: 'line',
     data: chartData,
-    }
+  }
 
   return (
     <div className="line-chart">
+      <h4>Total expenditure per resident, €</h4>
       <Line data={chartData} options={config} />
     </div>
   )
