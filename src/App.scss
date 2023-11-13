@@ -57,8 +57,10 @@ body {
 .line-chart {
   margin: 20px 0;
   background-color: #f0f0f0;
-  padding: 5%;
+  padding: 5% 5% 10%;
   text-align: center;
+  min-height: 300px;
+  max-height: 300px;
 }
 
 .koulu, .kunta {

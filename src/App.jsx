@@ -78,6 +78,8 @@ const LineChart = ({ result }) => {
   const config = {
     type: 'line',
     data: chartData,
+    responsive: true,
+    maintainAspectRatio: false,
   }
 
   return (
