@@ -175,19 +175,18 @@ function App() {
   return (
     <div>
       <h1>School Engine with Local Finance</h1>
-        <p>Yle, the Finnish Braodcasting Company, unveiled <a href='https://yle.fi/a/74-20018233'><em>the School Engine (Koulukone)</em></a> in February 2023.
+        <p>Yle, the Finnish Broadcasting Company, unveiled <a href='https://yle.fi/a/74-20018233'><em>the School Engine (Koulukone)</em></a> in February 2023.
         This minimalist-designed search tool allows you to explore your primary school in Finland and gain insights into various aspects, including
         the average school-leaving certificate grades, the percentage of pupils with Finnish as a second language in the school (S2 pupils),
         as well as other social and economic indicators of the school's surrounding region.
         Furthermore, schools within a municipality are ranked based on the average grades and the percentages of S2 pupils.</p>
-        <p>The School Engine sparked heated debates on social media. 
-        <a href='https://twitter.com/Opetushallitus/status/1626532367077629955?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1626532367077629955%7Ctwgr%5Eda56fac577aaf7bf61b96270dec031c53b1806e6%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fembed.sanoma-sndp.fi%2Fext%2Fembed%2F%3Furl%3Dhttps3A2F2Ftwitter.com2FOpetushallitus2Fstatus2F1626532367077629955'>
+        <p>The School Engine sparked heated debates on social media. <a href='https://twitter.com/Opetushallitus/status/1626532367077629955?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1626532367077629955%7Ctwgr%5Eda56fac577aaf7bf61b96270dec031c53b1806e6%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fembed.sanoma-sndp.fi%2Fext%2Fembed%2F%3Furl%3Dhttps3A2F2Ftwitter.com2FOpetushallitus2Fstatus2F1626532367077629955'>
         Finnish National Agency for Education (Opetushallitus)</a> revealed that they have requested Yle not to release the tool.
         The former Minister of Education, <a href='https://twitter.com/liandersson/status/1626511828246208512?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1626518450653765632%7Ctwgr%5Ed6fefab46d113c850bf8cf2b88c54aca9686f51a%7Ctwcon%5Es2_&ref_url=https%3A%2F%2Fembed.sanoma-sndp.fi%2Fext%2Fembed%2F%3Furl%3Dhttps3A2F2Ftwitter.com2Fliandersson2Fstatus2F1626518450653765632'>
         Li Andersson</a>, also criticised the school engine, describing it as "truly sad." <a href='https://yle.fi/a/74-20018712'>Jouko Jokinen</a>, the Editor-in-Chief at Yle, 
         emphasised the significance of fact-based journalism and expressed their willingness to delve into similar statistics for kindergartens.</p>
         <p>This school engine represents my endeavour as a budding data science student to enhance Yle's school engine by integrating publicly available
-        finincial data of municipalities. Through this tool, you can access information such as your school's average school-leaving certificate grades, 
+        financial data of municipalities. Through this tool, you can access information such as your school's average school-leaving certificate grades, 
         the percentage of S2 pupils, the rate of tertiary education completion among local residents, the employment statistics in the area, 
         the median income of the region, and the local government's expenditures on education. Additionally, it offers predictions 
         for the average 2023 school-leaving certificate grades based on historical data.
